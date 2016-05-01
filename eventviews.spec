@@ -22,6 +22,11 @@ BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(KF5Libkdepim)
 BuildRequires: cmake(KF5KDGantt2)
+BuildRequires: cmake(KF5KDELibs4Support)
+BuildRequires: cmake(Qt5UiTools)
+BuildRequires: cmake(KF5CalendarCore)
+BuildRequires: cmake(KF5CalendarUtils)
+BuildRequires: cmake(KF5CalendarSupport)
 BuildRequires: sasl-devel
 
 %description
