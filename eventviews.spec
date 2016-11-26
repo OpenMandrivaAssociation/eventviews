@@ -27,10 +27,12 @@ BuildRequires: cmake(Qt5UiTools)
 BuildRequires: cmake(KF5CalendarCore)
 BuildRequires: cmake(KF5CalendarUtils)
 BuildRequires: cmake(KF5CalendarSupport)
+BuildRequires: cmake(KF5Akonadi)
+BuildRequires: boost-devel
 BuildRequires: sasl-devel
 
 %description
-KDE library for calendar event handling
+KDE library for calendar event handling.
 
 %package -n %{libname}
 Summary: KDE library for calendar event handling
@@ -38,7 +40,7 @@ Group: System/Libraries
 Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
-KDE library for calendar handling
+KDE library for calendar handling.
 
 %package -n %{devname}
 Summary: Development files for %{name}
@@ -51,10 +53,9 @@ Development files (Headers etc.) for %{name}.
 %prep
 %setup -q
 %apply_patches
+%cmake_kde5
 
 %build
-%cmake_kde5
-cd ../
 %ninja -C build
 
 %install
