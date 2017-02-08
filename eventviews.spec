@@ -63,6 +63,7 @@ Development files (Headers etc.) for %{name}.
 
 %files
 %{_sysconfdir}/xdg/eventviews.categories
+%{_sysconfdir}/xdg/eventviews.renamecategories
 %{_datadir}/kservicetypes5/calendardecoration.desktop
 
 %files -n %{libname}
