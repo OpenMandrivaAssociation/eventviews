@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   eventviews-17.12.1.tar.xz: 4c1c2688be441d9e36ead54fafca7bdbbbcbc5d8
+sources:
+  eventviews-17.12.2.tar.xz: 3f6a3e175d28bfa3c317486982f88f9045cc7ce1
