@@ -32,6 +32,9 @@ BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(KF5Contacts)
 BuildRequires: boost-devel
 BuildRequires: sasl-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for calendar event handling.
